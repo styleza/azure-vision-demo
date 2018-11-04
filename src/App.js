@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Config from './config.js';
 import axios from 'axios';
 
@@ -8,11 +7,10 @@ class App extends Component {
 		super(props);
 		
 		this.state = {
-			url: "https://www.terveystalo.com/Global/Etusivu/Bannerit%202018/TT-toimisto-740x460.jpg",
+			url: "",
 			tags: [],
 			captions: []
 		};
-		this.analyzeImage();
 	}
 	analyzeImage = () => {
 		axios.post(
